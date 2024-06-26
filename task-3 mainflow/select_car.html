@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Car Brands</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to select_car.html */
+        #car-selection {
+            padding: 80px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #featured-models {
+            padding: 80px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .model-item {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .model-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .model-item h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Select Car Brands</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="select_car.html">Select Car Brands</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="car-selection">
+        <div class="container">
+            <h2>Explore Car Brands</h2>
+            <form id="carForm">
+                <label for="carSelect">Choose a car brand:</label>
+                <select id="carSelect" name="carSelect">
+                    <option value="">-- Please select --</option>
+                    <option value="tata">Tata</option>
+                    <option value="honda">Honda</option>
+                    <option value="hundai">Hundai</option>
+                    <option value="maruti">Maruti</option>
+                    <option value="mg">MG</option>
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes">Mercedes-Benz</option>
+                    <option value="tesla">Tesla</option>
+                   
+                </select>
+                <button type="submit">Show Car Info</button>
+            </form>
+
+            <div id="carInfo" style="display: none;">
+                <h3 id="carTitle"></h3>
+                <img id="carImage" class="car-image" src="" alt="Car Image">
+                <p id="carDescription"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
